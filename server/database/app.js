@@ -1,3 +1,5 @@
+/* eslint-env es6 */
+
 const express = require('express');
 const mongoose = require('mongoose');
 const fs = require('fs');
@@ -20,11 +22,11 @@ const Dealerships = require('./dealership');
 // Populate initial data
 try {
   Reviews.deleteMany({}).then(() => {
-    Reviews.insertMany(reviews_data['reviews']);
+    Reviews.insertMany(reviews_data.reviews);
   });
 
   Dealerships.deleteMany({}).then(() => {
-    Dealerships.insertMany(dealerships_data['dealerships']);
+    Dealerships.insertMany(dealerships_data.dealerships);
   });
 } catch (error) {
   console.error('Error populating initial data:', error.message);
@@ -121,4 +123,3 @@ app.post('/insert_review', express.raw({ type: '*/*' }), async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
-
