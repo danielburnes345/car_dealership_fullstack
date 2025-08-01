@@ -2,7 +2,7 @@
 
 <d>Overview</d>
 
-A full-stack web application designed to manage car dealership inventories and customer reviews. The backend is built with Django, providing secure APIs and data management, while the React frontend delivers a responsive and user-friendly interface. Customer reviews are analyzed using a sentiment analysis API..
+A full-stack web application designed to manage car dealership inventories and customer reviews. The backend is built with Django, providing secure APIs and data management, while the React frontend delivers a responsive and user-friendly interface. Customer reviews are analyzed using a sentiment analysis API.
 
 <d>Tech Stack</d>
 
